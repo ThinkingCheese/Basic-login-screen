@@ -1,0 +1,73 @@
+/* keyframes */
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+} /*can only work by being called to transmit something listed here for what we called it in*/
+/*main parts*/
+body{
+  background-image: url("https://img.freepik.com/free-vector/white-gold-hexagon-pattern-background_53876-115292.jpg?w=2000");
+}
+h1.title {
+  text-align: center;
+  animation: fadein 1.5s;
+}
+/*navbar*/
+.navbar{
+  background: #cccccc;
+  padding: 15px 16px;
+  text-align:center;
+  overflow: hidden;
+  position:fixed;
+  top: 0%;
+  width: 100%;
+  margin-left: -30px;
+}
+.navbar a {
+  color: black;
+  font-size: 15px;
+  padding: 14px 15px;
+  text-align: center;
+  transition: background-color .5s ease-out 50ms; /* implemented for general html tags, transitions everytime we want to change it */
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: #827d7d;
+  color: yellow;
+}
+.navbar a:active {
+  background-color: white;
+  color: blue;
+}
+/*login*/
+#loginFrame2{
+  text-align: center;
+  width:300px;
+  height:300px;
+  padding:50px;
+  background-color: white;
+  border-radius: 25px;
+  animation: fadein 1.5s;
+}
+#loginFrame1{
+  display: flex;
+  justify-content:center;
+}
+
+#login{
+  width:35%;
+  height:8%;
+  background-color: red;
+  margin-left:15px;
+  border: 0px;
+  border-radius: 25px;
+}
+#login:hover{
+  background-color: #c80000;
+}
+#login:active {
+  background-color: darkred;
+}
